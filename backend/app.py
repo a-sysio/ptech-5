@@ -55,7 +55,7 @@ def handle_todo(todo_id):
     if request.method == 'GET':
         sql = '''
             SELECT
-                id, title, description, due_date, completed, category_id)
+                id, title, description, due_date, completed, category_id
             FROM
                 todos
             WHERE id = %s
