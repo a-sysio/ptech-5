@@ -6,7 +6,7 @@ import Button from '@mui/material/Button';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import TodoList from './Todo';
 import CreateTodo from './CreateTodo.jsx';
-const API_BASE = 'http://localhost:3308';
+import { API_BASE } from './config';
 
 const App = () => {
   const [categories, setCategories] = useState([])
