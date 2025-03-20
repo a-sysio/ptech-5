@@ -6,7 +6,7 @@ DB_HOST = os.getenv('DB_HOST', 'localhost')
 DB_USER = os.getenv('DB_USER', 'user')
 DB_PASS = os.getenv('DB_PASS', 'password')
 DB_NAME = os.getenv('DB_NAME', 'app')
-DB_PORT = os.getenv('DB_PORT', 3306)
+DB_PORT = os.getenv('DB_PORT', 6033)
 
 
 def connect():
