@@ -6,9 +6,6 @@ app = Flask(__name__)
 
 CORS(app)
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=3000, debug=True)
-
 @app.route('/todos', methods=['GET', 'POST'])
 def get_todos():
     db = connect()
@@ -91,3 +88,6 @@ def get_categories():
 
     disconnect(db)
     return categories
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=3000, debug=True)
